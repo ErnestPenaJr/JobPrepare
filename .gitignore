@@ -201,3 +201,6 @@
 !/.sublime
 /.sublime/homebrew.sublime-workspace
 !/.vscode
+
+# Local Netlify folder
+.netlify
