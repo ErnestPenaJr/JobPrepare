@@ -1,0 +1,154 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - generic [ref=e7]: JobPrep
+      - generic [ref=e9]:
+        - generic [ref=e10]: Navigation
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Analyzer" [ref=e14] [cursor=pointer]:
+              - /url: /
+              - img [ref=e15]
+              - generic [ref=e18]: Analyzer
+          - listitem [ref=e19]:
+            - link "Landing" [ref=e20] [cursor=pointer]:
+              - /url: /landing
+              - img [ref=e21]
+              - generic [ref=e24]: Landing
+          - listitem [ref=e25]:
+            - link "Pricing" [ref=e26] [cursor=pointer]:
+              - /url: /pricing
+              - img [ref=e27]
+              - generic [ref=e30]: Pricing
+          - listitem [ref=e31]:
+            - link "Report" [ref=e32] [cursor=pointer]:
+              - /url: /report
+              - img [ref=e33]
+              - generic [ref=e36]: Report
+          - listitem [ref=e37]:
+            - link "Feedback" [ref=e38] [cursor=pointer]:
+              - /url: /feedback
+              - img [ref=e39]
+              - generic [ref=e41]: Feedback
+          - listitem [ref=e42]:
+            - link "Feedback Admin" [ref=e43] [cursor=pointer]:
+              - /url: /admin/feedback
+              - img [ref=e44]
+              - generic [ref=e46]: Feedback Admin
+      - generic [ref=e48]:
+        - generic [ref=e49]:
+          - text: v0.1 •
+          - generic [ref=e50]: Prototype
+        - button "Toggle theme" [ref=e51]:
+          - img [ref=e52]
+          - text: Dark
+      - button "Toggle Sidebar" [ref=e54]
+    - main [ref=e55]:
+      - main [ref=e56]:
+        - generic [ref=e57]:
+          - generic [ref=e58]:
+            - generic [ref=e59]:
+              - img
+              - text: JobPrep
+            - heading "Know your fit before you apply" [level=1] [ref=e60]
+            - paragraph [ref=e61]: Paste a job description and your resume. Get a clear score, gaps, and a tailored cover letter in minutes.
+            - generic [ref=e62]:
+              - link "Try the Analyzer" [ref=e63] [cursor=pointer]:
+                - /url: /
+                - text: Try the Analyzer
+                - img
+              - link "View Pricing" [ref=e64] [cursor=pointer]:
+                - /url: "#pricing"
+            - generic [ref=e65]:
+              - generic [ref=e66]:
+                - img [ref=e67]
+                - text: No fabrication
+              - generic [ref=e70]:
+                - img [ref=e71]
+                - text: Your files stay private
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - generic [ref=e76]: 1. Upload
+              - generic [ref=e77]: Add your JD link or paste text, plus your resume.
+            - generic [ref=e78]:
+              - generic [ref=e80]: 2. Analyze
+              - generic [ref=e81]: We score across multiple lenses and surface keyword gaps.
+            - generic [ref=e82]:
+              - generic [ref=e84]: 3. Apply
+              - generic [ref=e85]: Generate a cover letter and export your report.
+          - generic [ref=e86]:
+            - generic [ref=e87]:
+              - generic [ref=e89]:
+                - img [ref=e90]
+                - text: Focus your efforts
+              - generic [ref=e93]: Target roles where you’re a strong fit and skip the rest.
+            - generic [ref=e94]:
+              - generic [ref=e96]:
+                - img [ref=e97]
+                - text: Stand out
+              - generic [ref=e99]: Tailored cover letters aligned to the job — without fabricating skills.
+            - generic [ref=e100]:
+              - generic [ref=e102]:
+                - img [ref=e103]
+                - text: Private by default
+              - generic [ref=e105]: We never sell data. You control your files and history.
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - heading "Simple, flexible pricing" [level=2] [ref=e108]
+              - paragraph [ref=e109]: Start free. Upgrade when your search gets serious.
+            - generic [ref=e110]:
+              - generic [ref=e111]:
+                - generic [ref=e112]:
+                  - generic [ref=e114]: Free
+                  - generic [ref=e115]: $0
+                  - generic [ref=e116]: Try the core analyzer
+                - generic [ref=e117]:
+                  - list [ref=e118]:
+                    - listitem [ref=e119]: 5 analyses / day
+                    - listitem [ref=e120]: Score + basic gaps
+                    - listitem [ref=e121]: View results only
+                  - link "Try Free" [ref=e122] [cursor=pointer]:
+                    - /url: /
+              - generic [ref=e123]:
+                - generic [ref=e124]:
+                  - generic [ref=e126]: Starter
+                  - generic [ref=e127]: $9.99/mo
+                  - generic [ref=e128]: For active job seekers
+                - generic [ref=e129]:
+                  - list [ref=e130]:
+                    - listitem [ref=e131]: 50 analyses / month
+                    - listitem [ref=e132]: 10 cover letters / month
+                    - listitem [ref=e133]: Export + save history
+                  - button "Start 7-day trial" [ref=e134]
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - generic [ref=e138]: Pro
+                    - generic [ref=e139]: Most Popular
+                  - generic [ref=e140]: $24.99/mo
+                  - generic [ref=e141]: Most popular — unlimited
+                - generic [ref=e142]:
+                  - list [ref=e143]:
+                    - listitem [ref=e144]: Unlimited analyses
+                    - listitem [ref=e145]: Unlimited cover letters
+                    - listitem [ref=e146]: Advanced insights + tracker
+                  - button "Start 7-day trial" [ref=e147]
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - generic [ref=e151]: Career
+                  - generic [ref=e152]: $49.99/mo
+                  - generic [ref=e153]: Power users & coaches
+                - generic [ref=e154]:
+                  - list [ref=e155]:
+                    - listitem [ref=e156]: Unlimited everything
+                    - listitem [ref=e157]: 5 resume profiles
+                    - listitem [ref=e158]: Priority support
+                  - button "Start 7-day trial" [ref=e159]
+            - paragraph [ref=e160]: Annual plans available. Student discounts and trials per promotions.
+  - button "Open Next.js Dev Tools" [ref=e166] [cursor=pointer]:
+    - img [ref=e167]
+  - alert [ref=e170]
+```

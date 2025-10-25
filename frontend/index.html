@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JOBS‑FullStack Analyzer</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>JOBS‑FullStack — Resume vs JD Analyzer</h1>
+      <div class="meta">
+        <span id="today"></span>
+        <a href="/settings" style="color:inherit;text-decoration:none">Settings</a>
+      </div>
+    </header>
+    <main class="grid">
+      <section class="col inputs" aria-label="Inputs">
+        <h2>Inputs</h2>
+        <div class="block">
+          <label>Job Description URL</label>
+          <div class="row">
+            <input id="jdUrl" type="url" placeholder="https://..." />
+            <button id="btnFetchUrl">Fetch</button>
+          </div>
+        </div>
+        <div class="block">
+          <label>Job Description (paste text or drop file)</label>
+          <textarea id="jdText" rows="10" placeholder="Paste JD text here..."></textarea>
+          <input id="jdFile" type="file" accept=".txt,.md,.pdf,.docx" />
+        </div>
+        <div class="block">
+          <label>Resume (paste text or drop file)</label>
+          <textarea id="resumeText" rows="8" placeholder="Paste resume text here..."></textarea>
+          <input id="resumeFile" type="file" accept=".txt,.md,.pdf,.docx" />
+        </div>
+        <div class="block">
+          <label>Cover Letter (optional)</label>
+          <textarea id="clText" rows="6" placeholder="Paste cover letter text..."></textarea>
+          <input id="clFile" type="file" accept=".txt,.md,.pdf,.docx" />
+        </div>
+        <div class="block actions">
+          <button id="btnAnalyze">Analyze</button>
+          <button id="btnClear">Clear</button>
+          <span id="progress" role="status" aria-live="polite" class="hidden">Analyzing…</span>
+        </div>
+      </section>
+
+      <section class="col results" aria-label="Analysis Results">
+        <h2>Analysis Results</h2>
+        <div id="decision" class="banner"></div>
+        <div class="score">
+          <div>
+            <span>Final Score:</span>
+            <span id="finalScore">—</span>
+          </div>
+          <div class="meter"><div id="meterFill"></div></div>
+          <div id="stability" class="subtle"></div>
+        </div>
+        <details>
+          <summary>Iteration Scores</summary>
+          <ol id="iterations"></ol>
+        </details>
+        <details open>
+          <summary>Keyword Diff</summary>
+          <div class="row">
+            <div>
+              <h4>Matched</h4>
+              <ul id="kwMatched"></ul>
+            </div>
+            <div>
+              <h4>Missing</h4>
+              <ul id="kwMissing"></ul>
+            </div>
+          </div>
+        </details>
+        <details open>
+          <summary>Gaps</summary>
+          <ul id="gaps"></ul>
+        </details>
+        <details id="stopBox" class="hidden">
+          <summary>Stop Conditions</summary>
+          <ul id="stopReasons"></ul>
+        </details>
+      </section>
+
+      <section class="col actions" aria-label="Actions">
+        <h2>Actions</h2>
+        <button id="btnCover" disabled>Generate Cover Letter</button>
+        <textarea id="coverOut" rows="14" placeholder="Generated cover letter will appear here" readonly></textarea>
+        <div class="block">
+          <button id="btnExportMd" disabled>Export Markdown</button>
+          <button id="btnPrint" disabled>Print / Save PDF</button>
+          <button id="btnPurge">Delete Session</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+  </html>

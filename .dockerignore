@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+Dockerfile*
+.dockerignore
+.git
+.gitignore
+web/.next
+web/node_modules
+web/.turbo
+web/.env*
+assets/feedback/*.jsonl

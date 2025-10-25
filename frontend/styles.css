@@ -1,0 +1,30 @@
+:root{ --bg:#0b0d10; --panel:#161a1f; --text:#e6e9ee; --muted:#9aa3af; --accent:#3b82f6; --accept:#16a34a; --reject:#dc2626; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;color:var(--text);background:var(--bg)}
+.app-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--panel);border-bottom:1px solid #222}
+.app-header h1{font-size:18px;margin:0}
+.app-header .meta{font-size:12px;color:var(--muted);display:flex;gap:12px}
+.grid{display:grid;grid-template-columns:1fr 1.2fr 0.8fr;gap:12px;padding:12px}
+.col{background:var(--panel);padding:12px;border:1px solid #222;border-radius:8px;min-height:80vh}
+.col h2{margin-top:0;font-size:16px}
+.block{margin:10px 0}
+label{display:block;margin-bottom:6px;color:var(--muted)}
+textarea,input[type="url"],input[type="text"]{width:100%;background:#0e1116;border:1px solid #2a2f36;border-radius:6px;color:var(--text);padding:8px}
+input[type="file"]{margin-top:6px}
+.row{display:flex;gap:8px}
+button{background:#1f2937;border:1px solid #2a2f36;color:var(--text);padding:8px 10px;border-radius:6px;cursor:pointer}
+button:hover{border-color:#3b4452}
+button:disabled{opacity:.5;cursor:not-allowed}
+.actions{display:flex;flex-direction:column;gap:8px}
+.banner{padding:8px;border-radius:6px;margin-bottom:8px}
+.banner.accept{background:rgba(22,163,74,.15);border:1px solid var(--accept)}
+.banner.reject{background:rgba(220,38,38,.15);border:1px solid var(--reject)}
+.score{display:flex;flex-direction:column;gap:6px}
+.meter{height:10px;background:#0e1116;border:1px solid #2a2f36;border-radius:999px;overflow:hidden}
+#meterFill{height:100%;width:0;background:linear-gradient(90deg,#ef4444,#f59e0b,#22c55e)}
+.subtle{color:var(--muted);font-size:12px}
+ul{margin:6px 0 0 16px}
+.hidden{display:none}
+@media (max-width: 980px){ .grid{grid-template-columns:1fr} .col{min-height:auto} }
+@media print{ .app-header,.inputs,.actions{display:none} .col{border:none} body{background:#fff;color:#000} .results{border:none} }
+

@@ -1,0 +1,13 @@
+[build]
+  base = "web"
+  command = "npm ci && npx prisma generate && npm run build"
+  publish = ".next"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Optional: set environment here or via Netlify UI
+[build.environment]
+  # Empty means use same-origin API routes if implemented, or set via UI
+  NEXT_PUBLIC_API_URL = ""
+
