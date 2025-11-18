@@ -77,7 +77,7 @@ function loadSettings(): Settings {
 const API = (() => {
   const envUrl = process.env.NEXT_PUBLIC_API_URL as string | undefined;
   // If an external API base is provided, use it; otherwise use same-origin /api
-  return envUrl !== undefined ? envUrl : '/api';
+  return envUrl && envUrl.trim() ? envUrl : '/api';
 })();
 
 export default function Home() {

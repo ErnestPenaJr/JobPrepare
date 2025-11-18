@@ -22,7 +22,7 @@ function ensureSwal(): Promise<any> {
 
 const API = (() => {
   const envUrl = process.env.NEXT_PUBLIC_API_URL as string | undefined;
-  return envUrl !== undefined ? envUrl : '/api';
+  return envUrl && envUrl.trim() ? envUrl : '/api';
 })();
 
 export default function FeedbackPage() {

@@ -2,18 +2,18 @@
   "version": 1,
   "functions": {
     "/api/auth/logout": {},
-    "/api/db/ping": {},
-    "/api/delete-session": {},
-    "/api/cover-letter": {},
-    "/api/extract": {},
-    "/api/feedback/[id]": {},
-    "/api/feedback/list": {},
-    "/api/fetch-url": {},
-    "/api/analyze": {},
-    "/api/upload": {},
     "/api/auth/login": {},
+    "/api/delete-session": {},
+    "/api/extract": {},
+    "/api/db/ping": {},
+    "/api/feedback/list": {},
+    "/api/cover-letter": {},
+    "/api/analyze": {},
+    "/api/feedback/[id]": {},
     "/api/feedback": {},
+    "/api/upload": {},
     "/api/usage/reset": {},
+    "/api/fetch-url": {},
     "/api/jobs/match": {}
   }
 }
